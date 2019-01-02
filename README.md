@@ -1,7 +1,7 @@
 # aframe-gadgets
 Some tiny custom aframe components to research A-Frame possibilities.
-## What this project is about
-I'm a student of the Multimedia Degree at the Open University of Catalonia (UOC). The degree includes a six month course on Virtual Reality, and A-Frame is used in hands-on assignments. I drafted several custom components to complete my assignments and here I'm sharing a more polished version of the code I wrote, since it's my intention to keep learning and researching on A-Frame, THREE and WebGL, and make my little components to evolve and become something more complex and hopefully useful for the community.
+## What is this project about
+I'm a student of the Multimedia Degree at the Open University of Catalonia (UOC). The degree includes a six month course on Virtual Reality, including a number of hands-on assignments based on A-Frame. I drafted several custom components to complete my assignments and here I'm sharing a more polished version of the code I wrote, since it's my intention to keep learning and researching on A-Frame, THREE and WebGL, and make my little components to evolve and become something more complex and hopefully useful for the community.
 
 I'll be gradually polishing and pushing several pieces of code including:
 
@@ -21,9 +21,7 @@ It also works well together with the _sky-carrousel_ custom component. See a dem
 ### sky-carrousel
 Provides an easy way to change source images in a-sky entities, as well as dynamically adapting light conditions to every new image loaded. 
 
-Basically it takes a json configuration file preloaded into the A-Frame asset system and cycles through a series of equirrectangular images and light adjustments, either by handling the _click_ event of a a-sky entity or by calling the _next_ function offered by the component itself.
-
-See the demo [here](https://etebros.github.io/aframe-gadgets/examples/sky-carrousel.html).
+Basically it takes a json configuration file preloaded into the A-Frame asset system and cycles through a series of equirrectangular images and light adjustments, either by handling the _click_ event of a a-sky entity or by calling the _next_ function offered by the component itself. See the demo [here](https://etebros.github.io/aframe-gadgets/examples/sky-carrousel.html).
 
 
 

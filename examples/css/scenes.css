@@ -1,0 +1,23 @@
+
+html,
+body {
+  height: 100%;
+  background-color: #000;  
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: white;
+}
+
+.loader {
+    z-index: 9999;
+    -webkit-transition: opacity 2s;
+    background-color: black;
+    transition: opacity 5s;
+}

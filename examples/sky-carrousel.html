@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <title>Sky Carrousel - A-Frame</title>
     <meta name="description" content="Sky Carrousel - A-Frame">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scenes.css" rel="stylesheet">
     <script src="../lib/aframe/aframe-v0.8.2.min.js"></script>
     <script src="../components/sky-carrousel/sky-carrousel.js"></script>
     <script src="../components/add-shadow-material/add-shadow-material.js"></script>
+    <script src="../components/show-load-dom/show-load-dom.js"></script>
   </head>
-  <body>
-    <a-scene>
+  <body class="text-center flex-column">
+      <div id="load-message" class="d-flex flex-column w-100 p-3 mx-auto my-auto loader">
+          <div class="w-75 mx-auto p-3">Click on the sky to see how this works...</div>
+          <div class="p-3 justify-content-center"><img src="img/wait.gif"></div>
+      </div>
+    <a-scene show-load-dom="idDOM: #load-message">
       <a-assets>
         <!--Add the images to feed into a-sky as assets-->
         <!-- https://www.ronenbekerman.com/ Licensed for non commercial use -->
@@ -39,5 +46,8 @@
         <a-cursor></a-cursor>
       </a-camera>
     </a-scene>
+    <script src="../lib/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="../lib/bootstrap/popper.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.min.js"></script>
   </body>
 </html>
