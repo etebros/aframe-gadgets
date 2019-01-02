@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sky Carrousel - A-Frame</title>
+    <meta name="description" content="Sky Carrousel - A-Frame">
+    <script src="../lib/aframe/aframe-v0.8.2.min.js"></script>
+    <script src="../components/sky-carrousel/sky-carrousel.js"></script>
+    <script src="../components/add-shadow-material/add-shadow-material.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!--Add the images to feed into a-sky as assets-->
+        <!-- https://www.ronenbekerman.com/ Licensed for non commercial use -->
+        <img id="sky-morning" src="img/sky-morning.png">
+        <img id="sky-afternoon" src="img/sky-afternoon.png">
+        <img id="sky-evening" src="img/sky-evening.png">
+        <!--Add the json config file as asset-->
+        <a-asset-item id="conf" src="json/sky-carrousel.json" response-type="json"></a-asset-item>
+      </a-assets>
+      <a-box position="-1 0.5 -5" rotation="0 45 0" color="#4CC3D9" shadow="cast: true; receive: true"></a-box>
+      <a-sphere position="0 1.25 -7" radius="1.25" color="#EF2D5E" shadow="cast: true; receive: true"></a-sphere>
+      <a-cylinder position="1 0.75 -5" radius="0.5" height="1.5" color="#FFC65D" shadow="cast: true; receive: true"></a-cylinder>
+      <!-- A transparent plane just receiving shadows -->
+      <a-plane position="0 0 -6" rotation="-90 0 0" width="4" height="4" shadow="cast: false; receive: true" add-shadow-material></a-plane>
+      <a-sky radius="40 "sky-carrousel="conf: #conf">
+          <a-entity id="sky-ambient-light" light="type:hemisphere"></a-entity>
+          <a-entity id="sky-directional-light" light="type:directional; 
+                            castShadow:true; 
+                            target:#directionalTarget;
+                            shadowCameraLeft: -10.0;
+                            shadowCameraRight: 10.0;
+                            shadowCameraTop: 10.0"
+                            position="0 1 0">
+                            <a-entity id="directionalTarget"></a-entity>
+      </a-sky>
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

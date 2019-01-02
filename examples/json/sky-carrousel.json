@@ -1,0 +1,32 @@
+{
+    "srcImages": [
+        "#sky-morning",
+        "#sky-afternoon",
+        "#sky-evening"
+    ],
+    "hemisphereIntensities": [
+        "0.7",
+        "0.5",
+        "0.3"
+    ],
+    "hemisphereColors" : [
+        "#d8ffff",
+        "#caffff",
+        "#718794"
+    ],
+    "hemisphereGroundColors" : [
+        "#beb696",
+        "#1f2917",
+        "#322f15"
+    ],
+    "directionalIntensities": [
+        "1.0",
+        "0.6",
+        "0.1"
+    ],
+    "directionalPositions": [
+        "-0 -1 -0.5",
+        "-0.4 -1 -1.2",
+        "0.4 -1 -0.8"
+    ]
+}
