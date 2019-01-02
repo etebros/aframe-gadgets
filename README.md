@@ -10,6 +10,8 @@ I'll be gradually polishing and pushing several pieces of code including:
 * A component to add [THREE ShadowMaterial](https://threejs.org/docs/index.html#api/en/materials/ShadowMaterial) to A-Frame entities
 * An image carrousel plugable into a-sky components
 * A component to dynamically replace textures in GTLF models
+## Examples
+[Scene with sky-carrousel and add-shadow-material](https://etebros.github.io/aframe-gadgets/examples/sky-carrousel.html)
 ## Components pushed so far
 ### add-shadow-material
 This is nothing but a demo of how ShadowMaterial can be easily used from A-Frame. Basically, the need for it came when experimenting with [Jerome Etienne's ARJS](https://medium.com/arjs
