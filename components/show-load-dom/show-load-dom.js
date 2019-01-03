@@ -12,5 +12,6 @@ AFRAME.registerComponent('show-load-dom', {
   init: function () {
     var domElement = document.querySelector(this.data.idDOM)
     domElement.style.opacity = '0'
+    domElement.style.zIndex = '0'
   }
 })
